@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DG Caddy · AI disc golf coach in your pocket</title>
+  <meta name="description" content="Film your disc golf throw and get instant AI coaching on your footwork, reach back, power pocket, release and follow through. Drills, form scores and progress tracking.">
+  <meta name="theme-color" content="#1a0b3b">
+  <meta property="og:title" content="DG Caddy · AI disc golf coach in your pocket">
+  <meta property="og:description" content="Film your throw. Get coached by AI. Watch your scores climb.">
+  <meta property="og:image" content="https://dgcaddy.app/assets/og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="logo" href="#"><img class="pixel" src="assets/sprites/caddy.png" alt="">DG CADDY</a>
+      <nav aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#coach">The coach</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn" href="#download">Get the app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <span class="label">AI DISC GOLF COACH</span>
+          <h1>Your pocket caddy for a better throw</h1>
+          <p class="lead">Film a throw on your phone. DG Caddy breaks down your form, tells you the one thing to fix, and gives you drills to fix it.</p>
+          <div class="cta-row" id="download">
+            <a class="btn" href="#" aria-label="Download on the App Store"><img class="pixel" src="assets/sprites/disc.png" alt="">App Store</a>
+            <a class="btn secondary" href="#" aria-label="Get it on Google Play"><img class="pixel" src="assets/sprites/disc.png" alt="">Google Play</a>
+          </div>
+          <p class="fine">3 free analyses. No account needed to start.</p>
+        </div>
+        <div class="scene" aria-hidden="true">
+          <img class="pixel cloud" src="assets/sprites/cloud.png" alt="">
+          <img class="pixel flying" src="assets/sprites/flyingDisc.png" alt="">
+          <img class="pixel tree" src="assets/sprites/tree.png" alt="">
+          <img class="pixel caddy" src="assets/sprites/caddy.png" alt="">
+          <img class="pixel basket" src="assets/sprites/basket.png" alt="">
+        </div>
+      </div>
+      <div class="ground"></div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <span class="label">HOW IT WORKS</span>
+        <h2>Three steps. Ten minutes in the field.</h2>
+        <div class="grid-3" style="margin-top: 32px">
+          <div class="box step">
+            <img class="pixel" src="assets/sprites/camera.png" alt="">
+            <span class="label">STEP 1</span>
+            <h3>Film it</h3>
+            <p>Prop your phone up about 30 feet away, side-on. Record one throw or upload a clip you already have.</p>
+          </div>
+          <div class="box step">
+            <img class="pixel" src="assets/sprites/disc.png" alt="">
+            <span class="label">STEP 2</span>
+            <h3>Get coached</h3>
+            <p>Your caddy studies the key frames of your motion and scores six parts of your form, with specific fixes.</p>
+          </div>
+          <div class="box step">
+            <img class="pixel" src="assets/sprites/flame.png" alt="">
+            <span class="label">STEP 3</span>
+            <h3>Level up</h3>
+            <p>Run the drills, film again, and watch your scores climb. Your caddy remembers your last sessions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="coach">
+      <div class="wrap split">
+        <div>
+          <span class="label">YOUR REPORT</span>
+          <h2>Coaching you can actually use</h2>
+          <p>No vague "throw it harder". Every report tells you what it saw, why it's costing you distance or accuracy, and what to feel on the next rep.</p>
+          <ul class="checklist">
+            <li><img class="pixel" src="assets/sprites/check.png" alt="">A 0-100 form score and six category scores</li>
+            <li><img class="pixel" src="assets/sprites/check.png" alt="">Your top faults ranked by what matters most, with the exact frame</li>
+            <li><img class="pixel" src="assets/sprites/check.png" alt="">Drills you can run solo in a field or backyard</li>
+            <li><img class="pixel" src="assets/sprites/check.png" alt="">A one-line focus cue for your next throw</li>
+          </ul>
+        </div>
+
+        <div class="phone" role="img" aria-label="Example DG Caddy report: overall score 72, headline 'Your plant foot is closing you off'">
+          <div class="score-row">
+            <div class="score">72<small>/100</small></div>
+            <div>
+              <span class="label" style="margin-bottom:6px">BACKHAND · DRIVER</span>
+              <h3 style="font-size:12px;margin:0">Your plant foot is closing you off</h3>
+            </div>
+          </div>
+          <div class="box light" style="padding:12px;text-align:center">
+            <span class="label" style="color:var(--primary);margin-bottom:6px">YOUR FOCUS CUE</span>
+            <h3 style="margin:0">"Toe to target, then hit"</h3>
+          </div>
+          <div class="box" style="display:grid;gap:12px;padding:14px">
+            <div class="meter"><div class="row">Footwork<b>5</b></div><div class="bars"><i class="lo on"></i><i class="lo on"></i><i class="lo on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div></div>
+            <div class="meter"><div class="row">Reach back<b>8</b></div><div class="bars"><i class="lo"></i><i class="lo"></i><i class="lo"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="hi"></i><i></i><i></i></div></div>
+            <div class="meter"><div class="row">Power pocket<b>7</b></div><div class="bars"><i class="lo"></i><i class="lo"></i><i class="lo"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div></div>
+            <div class="meter"><div class="row">Weight shift<b>6</b></div><div class="bars"><i class="lo"></i><i class="lo"></i><i class="lo"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i></div></div>
+          </div>
+          <div class="box" style="padding:14px">
+            <h3>1. Closed plant foot</h3>
+            <p style="color:var(--white);font-size:20px;margin:0">Your front foot lands pointing past the target, so your hips can't open and the disc pulls left. Plant with your toe at the target and let the hips lead.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <span class="label">WHAT YOUR CADDY LOOKS AT</span>
+        <h2>Six parts of every throw</h2>
+        <div class="cats" style="margin-top: 32px">
+          <div class="box"><h3>Footwork</h3><p>X-step timing, stance, and where your plant foot lands.</p></div>
+          <div class="box"><h3>Reach back</h3><p>Disc path, depth, shoulder turn, and staying on plane.</p></div>
+          <div class="box"><h3>Power pocket</h3><p>Pulling the disc close through your chest with the elbow leading.</p></div>
+          <div class="box"><h3>Weight shift</h3><p>Moving from back to front, hips leading, bracing on the plant leg.</p></div>
+          <div class="box"><h3>Release</h3><p>Nose angle, hyzer or anhyzer, and a clean snap out of the grip.</p></div>
+          <div class="box"><h3>Follow through</h3><p>Rotating through the brace and finishing balanced.</p></div>
+        </div>
+        <p class="fine" style="margin-top: 20px">Works for backhand, forehand, approach shots and putts. Lefties welcome.</p>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="wrap" style="text-align:center">
+        <span class="label">PRICING</span>
+        <h2>Start free. Go Pro when you're hooked.</h2>
+        <div class="plans" style="text-align:left">
+          <div class="box plan">
+            <h3>Free</h3>
+            <div class="price">$0</div>
+            <ul>
+              <li>3 full throw analyses</li>
+              <li>Form scores and drills</li>
+              <li>Throw history</li>
+            </ul>
+          </div>
+          <div class="box plan light">
+            <span class="badge">7-DAY FREE TRIAL</span>
+            <h3>Pro</h3>
+            <div class="price">$39.99/yr</div>
+            <p style="margin:0">or $7.99 per month</p>
+            <ul>
+              <li>Unlimited throw analysis</li>
+              <li>Progress trends for every category</li>
+              <li>A coach that remembers your sessions</li>
+              <li>Cancel anytime</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap" style="max-width: 760px">
+        <span class="label">FAQ</span>
+        <h2>Questions</h2>
+        <div class="box">
+          <details>
+            <summary>How should I film my throw?</summary>
+            <p>From the side, about 30 feet away, with your whole body in frame from your run-up to your follow through. Prop your phone on your bag or a tripod. Good light helps a lot.</p>
+          </details>
+          <details>
+            <summary>How does the AI analyze my video?</summary>
+            <p>The app pulls about ten key frames from your clip, clustered around your release if you mark it. Those frames go to Claude, an AI model made by Anthropic, along with your skill level and recent sessions. It returns scores, faults and drills in a few seconds to a minute.</p>
+          </details>
+          <details>
+            <summary>Is my video uploaded?</summary>
+            <p>Only the still frames used for your analysis are uploaded and stored with your report. The full video stays on your phone. You can delete any throw, or your whole account, from the app.</p>
+          </details>
+          <details>
+            <summary>Is it as good as an in-person coach?</summary>
+            <p>Nothing beats a great coach standing next to you. DG Caddy is for all the field sessions in between: fast, honest feedback every time you throw, so you're not grooving bad habits.</p>
+          </details>
+          <details>
+            <summary>How do I cancel?</summary>
+            <p>Subscriptions are managed by Apple or Google. Cancel anytime in your App Store or Google Play subscription settings, or from Settings in the app.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final">
+      <div class="wrap">
+        <img class="pixel" src="assets/sprites/caddy.png" alt="">
+        <h2>Your next throw could be your best one.</h2>
+        <div class="cta-row">
+          <a class="btn" href="#">App Store</a>
+          <a class="btn secondary" href="#">Google Play</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 DG Caddy</span>
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:support@dgcaddy.app">Support</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

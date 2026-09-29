@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+supabase/functions/.env
+supabase/.temp/
+supabase/.branches/
+.idea

@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "DG Caddy",
+    "slug": "dgcaddy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "dgcaddy",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#1A0B3B",
+    "ios": {
+      "bundleIdentifier": "app.dgcaddy",
+      "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "app.dgcaddy",
+      "adaptiveIcon": {
+        "backgroundColor": "#1A0B3B",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "permissions": ["com.android.vending.BILLING"],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#1A0B3B",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 160
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "DG Caddy needs access to your videos so you can upload a throw for analysis.",
+          "cameraPermission": "DG Caddy uses the camera to film your throws for analysis.",
+          "microphonePermission": "DG Caddy records audio along with your throw video."
+        }
+      ],
+      "expo-video",
+      "expo-font",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

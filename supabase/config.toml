@@ -1,0 +1,16 @@
+project_id = "dgcaddy"
+
+[auth]
+enabled = true
+# The app signs users in anonymously during onboarding so there is no signup wall.
+enable_anonymous_sign_ins = true
+
+[functions.analyze-throw]
+verify_jwt = true
+
+[functions.delete-account]
+verify_jwt = true
+
+# RevenueCat can't send a Supabase JWT; the function checks a shared secret instead.
+[functions.revenuecat-webhook]
+verify_jwt = false
