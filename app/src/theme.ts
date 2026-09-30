@@ -25,8 +25,8 @@ export const fonts = {
 export const px = 4;
 
 export const links = {
-  website: 'https://dgcaddy.app',
-  privacy: 'https://dgcaddy.app/privacy.html',
-  terms: 'https://dgcaddy.app/terms.html',
-  support: 'mailto:support@dgcaddy.app',
+  website: 'https://dgcaddy.hyzer.xyz',
+  privacy: 'https://dgcaddy.hyzer.xyz/privacy.html',
+  terms: 'https://dgcaddy.hyzer.xyz/terms.html',
+  support: 'mailto:support@hyzer.xyz',
 } as const;

@@ -62,7 +62,7 @@ Useful scripts:
 Ship with EAS: `npx eas-cli@latest build --platform all`.
 
 ### 4. Website
-`website/` is plain HTML and CSS. Deploy it to any static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages) at the domain in `app/src/theme.ts` (`links`). Before launch, replace the `href="#"` store links in `website/index.html`.
+`website/` is plain HTML and CSS. Deploy it to any static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages) at `dgcaddy.hyzer.xyz` (point a CNAME for the `dgcaddy` subdomain at your host; the app links to it via `links` in `app/src/theme.ts`). Before launch, replace the `href="#"` store links in `website/index.html`.
 
 ## Design
 
@@ -72,6 +72,6 @@ Ship with EAS: `npx eas-cli@latest build --platform all`.
 
 ## Before launch
 - [ ] Confirm the prices on the website pricing section match your store products (currently $7.99/mo and $39.99/yr with a 7-day trial).
-- [ ] Set the real domain and support email (`app/src/theme.ts`, website, and legal pages).
+- [ ] Set up the support@hyzer.xyz mailbox (MX + SPF/DKIM/DMARC on hyzer.xyz).
 - [ ] Have the privacy policy and terms reviewed. App Store privacy labels: user content (photos/videos), identifiers, and purchases.
 - [ ] Anonymous accounts are tied to the device. Consider adding Sign in with Apple/Google using Supabase `linkIdentity` so users can move their history to a new phone.
