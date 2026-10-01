@@ -43,3 +43,4 @@ example
 /android
 
 .env
+/scripts/android-env.ps1
