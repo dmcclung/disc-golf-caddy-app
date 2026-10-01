@@ -44,7 +44,7 @@ In the dashboard, enable **Authentication → Sign In / Providers → Anonymous 
 ### 2. RevenueCat
 1. Create the products in App Store Connect and Google Play (for example, monthly and annual with a 7-day trial).
 2. In RevenueCat, attach those products to an entitlement named `pro`, and put the packages in the **current** offering.
-3. Add a webhook pointing at `https://<ref>.supabase.co/functions/v1/revenuecat-webhook`. Set the Authorization header to `Bearer <REVENUECAT_WEBHOOK_AUTH>`.
+3. Add a webhook pointing at `https://<ref>.supabase.co/functions/v1/revenuecat-webhook`, leave the Authorization header empty, and enable HMAC signing. Copy the signing secret (shown once) into `REVENUECAT_WEBHOOK_SIGNING_SECRET`.
 4. Copy the public iOS and Android SDK keys into `app/.env`, and the secret API key into the functions `.env`.
 
 ### 3. App

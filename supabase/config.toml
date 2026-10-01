@@ -11,6 +11,6 @@ verify_jwt = true
 [functions.delete-account]
 verify_jwt = true
 
-# RevenueCat can't send a Supabase JWT; the function checks a shared secret instead.
+# RevenueCat can't send a Supabase JWT; the function verifies RevenueCat's HMAC signature instead.
 [functions.revenuecat-webhook]
 verify_jwt = false
