@@ -98,6 +98,16 @@ as $$
 $$;
 
 revoke execute on function public.increment_analyses(uuid) from public, anon, authenticated;
+grant execute on function public.increment_analyses(uuid) to service_role;
+
+-- Explicit Data API grants. The project does not auto-expose new tables, so each role
+-- gets only what it needs; RLS policies above still limit rows to the signed-in user.
+-- Anonymous sign-ins use the `authenticated` role, so `anon` gets nothing.
+grant usage on schema public to authenticated, service_role;
+grant select, update on public.profiles to authenticated;
+grant select on public.entitlements to authenticated;
+grant select, delete on public.throws to authenticated;
+grant all on public.profiles, public.entitlements, public.throws to service_role;
 
 create trigger on_auth_user_created
   after insert on auth.users
